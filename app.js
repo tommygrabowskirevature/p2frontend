@@ -1,17 +1,11 @@
 //jshint esversion:6
 
 const express = require("express");
-const bodyParser = require("body-parser");
 const path = require("path");
-const favicon = require("serve-favicon");
-const fs = require("fs");
-const { listenerCount } = require("process");
 
 const app = express();
 
 app.use(express.static("Public"));
-
-app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
