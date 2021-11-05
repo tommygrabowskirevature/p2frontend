@@ -1,0 +1,27 @@
+{
+	"folders": [
+	  {
+		"path": ".."
+	  }
+	],
+	"settings": {
+	  "window.zoomLevel": 0,
+	  "editor.fontSize": 20,
+	  "files.autoSave": "afterDelay",
+	  "workbench.iconTheme": "vscode-icons",
+	  "workbench.colorTheme": "Monokai Pro",
+	  "liveServer.settings.donotShowInfoMsg": true,
+	  "vsicons.dontShowNewVersionMessage": true,
+	  "editor.defaultFormatter": "esbenp.prettier-vscode",
+	  "editor.formatOnSave": true,
+	  "liveSassCompile.settings.formats": [
+		{
+		  "format": "expanded",
+		  "extensionName": ".css",
+		  "savePath": "/Public/Styles/CSS/"
+		}
+	  ],
+	  "liveServer.settings.port": 5501
+	}
+  }
+  
