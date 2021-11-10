@@ -1,0 +1,60 @@
+@import "../../../variables";
+
+.sign__in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign__in-body {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid rgba($color: #000000, $alpha: 0.2);
+}
+
+.sign__in__header {
+  &__text {
+    font-size: 3rem;
+    color: $lint-dark-blue;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.sign__in-form {
+  font-size: 1.25rem;
+  & > label,
+  & > input,
+  & > button {
+    display: block;
+    max-width: 100%;
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+  }
+
+  & > label > i {
+    color: $lint-dark-blue;
+  }
+
+  & > label > i,
+  & > button > i {
+    margin-right: 0.5rem;
+  }
+
+  & > input {
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    padding: 0.5rem;
+  }
+
+  & > button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $primary-blue;
+    color: #fff;
+    border: 5px solid $primary-blue;
+
+    &:hover {
+      background-color: $primary-blue-light;
+    }
+  }
+}

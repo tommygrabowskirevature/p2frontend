@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <h2 align="center">User Details</h2>
+  </div>
+  <div>
+    <table class="table table-info table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Passord</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.password }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
