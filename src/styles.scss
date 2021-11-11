@@ -1,1 +1,131 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./reset";
+@import "./variables";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper-grey {
+  background-color: $lint-grey;
+}
+
+.header-container {
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+  margin-bottom: 1.5rem;
+  padding: 1.75rem 3rem;
+  background-color: #fff;
+}
+
+.navbar {
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  &__list {
+    grid-column-start: 2;
+    justify-self: end;
+    &__item {
+      margin-left: 2rem;
+      & > a {
+        border: 3px solid black;
+        padding: 0.25rem;
+        border-radius: 0.3125rem;
+        transition: background 0.2s ease-out;
+
+        &:hover {
+          background-color: rgba($color: #000000, $alpha: 0.2);
+        }
+
+        & > i {
+          margin-right: 0.3125rem;
+        }
+      }
+
+      display: inline;
+      cursor: pointer;
+    }
+  }
+}
+
+.logo-container {
+  grid-column-start: 1;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.body__section {
+  padding: 0 6rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.finances-container {
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: 1px solid rgba($color: #000000, $alpha: 0.2);
+}
+
+.finances__header {
+  background-color: $lint-dark-blue;
+
+  & > h2 {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+.finances__row:first-child {
+  font-weight: 600;
+}
+
+.finances__row:nth-child(odd) > div {
+  background-color: $primary-blue;
+}
+.finances__row:nth-child(even) > div {
+  background-color: $primary-blue-light;
+}
+
+.finances__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & > div {
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+
+  & > div:not(:last-child) {
+    border-right: 1px solid black;
+  }
+}
+
+.col__title {
+  border-bottom: 1px solid black;
+}
+
+.footer__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

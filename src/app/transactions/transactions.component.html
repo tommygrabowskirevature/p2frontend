@@ -1,0 +1,25 @@
+<section class="body__section">
+  <div class="finances-container">
+    <div class="finances__header">
+      <h2>Transactions</h2>
+    </div>
+    <div class="finances__table">
+      <div class="finances__row">
+        <div class="finances__row__col__name col__title">
+          Transaction Amount
+        </div>
+        <div class="finances__row__col__name col__title">Transaction Date</div>
+        <div class="finances__row__col__name col__title">Transaction ID</div>
+      </div>
+      <div class="finances__row" *ngFor="let transaction of transactions">
+        <div class="finances__row__col__Balance">
+          ${{ transaction.transactionAmount }}
+        </div>
+        <div class="finances__row__col__name">
+          {{ transaction.transactionDate }}
+        </div>
+        <div class="finances__row__col__name">{{ transaction.tid }}</div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+<section class="body__section">
+  <div class="finances-container">
+    <div class="finances__header">
+      <h2>Accounts</h2>
+    </div>
+    <div class="finances__table">
+      <div class="finances__row">
+        <div class="finances__row__col__name col__title">Account Type</div>
+        <div class="finances__row__col__Balance col__title">
+          Account Balance
+        </div>
+        <div class="finances__row__col__name col__title">Account ID</div>
+      </div>
+      <div class="finances__row" *ngFor="let account of accounts">
+        <div class="finances__row__col__name">{{ account.name }}</div>
+        <div class="finances__row__col__Balance">${{ account.balance }}</div>
+        <div class="finances__row__col__name">{{ account.aid }}</div>
+      </div>
+    </div>
+  </div>
+</section>

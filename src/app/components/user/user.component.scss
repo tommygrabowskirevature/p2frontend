@@ -1,0 +1,21 @@
+@import "../../../variables";
+
+.user__page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user__page__header {
+  padding: 0 2rem;
+  & > h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.body__section {
+  margin: 1rem 0;
+  & > p {
+    font-size: 1.25rem;
+  }
+}

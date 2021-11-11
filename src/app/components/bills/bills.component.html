@@ -1,0 +1,21 @@
+<section class="body__section">
+  <div class="finances-container">
+    <div class="finances__header">
+      <h2>Bills</h2>
+    </div>
+    <div class="finances__table">
+      <div class="finances__row">
+        <div class="finances__row__col__name col__title">Bill Name</div>
+        <div class="finances__row__col__Balance col__title">Bill Amount</div>
+        <div class="finances__row__col__name col__title">Bill Due Date</div>
+        <div class="finances__row__col__name col__title">Bill ID</div>
+      </div>
+      <div class="finances__row" *ngFor="let bill of bills">
+        <div class="finances__row__col__name">{{ bill.name }}</div>
+        <div class="finances__row__col__Balance">${{ bill.amount }}</div>
+        <div class="finances__row__col__name">{{ bill.dueDate }}</div>
+        <div class="finances__row__col__name">{{ bill.bid }}</div>
+      </div>
+    </div>
+  </div>
+</section>

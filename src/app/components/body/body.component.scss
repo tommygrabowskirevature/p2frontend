@@ -1,0 +1,149 @@
+@import "../../../variables";
+
+.body__section__download {
+  display: grid;
+  grid-template-areas: "selling picture picture";
+  margin-bottom: 1rem;
+}
+
+.download__content-container {
+  grid-area: selling;
+  width: 25rem;
+  z-index: 2;
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "para para"
+    "btn btn"
+    "apple google";
+
+  gap: 2rem;
+  & > img {
+    height: 3rem;
+  }
+}
+
+.download__content-header {
+  font-size: 3rem;
+  font-weight: 600;
+  grid-area: header;
+  color: $lint-dark-blue;
+}
+
+.download__content-paragraph {
+  grid-area: para;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.download__content-btn {
+  grid-area: btn;
+  background-color: $lint-blue;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 0.3125rem;
+  padding: 1rem 0;
+}
+
+.app-store-img {
+  grid-area: apple;
+  justify-self: left;
+}
+
+.google-play-img {
+  grid-area: google;
+  justify-self: right;
+}
+
+.download__image-container {
+  grid-area: picture;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > img {
+    height: 600px;
+    transform: rotate(25deg);
+    z-index: 1;
+    margin-bottom: -200px;
+    overflow-x: hidden;
+  }
+}
+
+.lint__bg__section {
+  background-color: $lint-light-blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 2;
+
+  &__catch {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem 0;
+
+    & > i {
+      color: $lint-green;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.section__info-container {
+  font-size: 4rem;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  & > h3 {
+    color: $lint-dark-blue;
+    display: inline;
+    text-align: left;
+    font-weight: 700;
+  }
+  & > i {
+    color: $lint-blue;
+    font-size: 20rem;
+  }
+}
+
+.section__demo {
+  z-index: 2;
+}
+
+.section__call__to__action {
+  background-color: $lint-dark-blue;
+  color: #fff;
+}
+
+.call__to__action-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+
+  & * {
+    padding: 1rem 0;
+  }
+
+  & > h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  & > p {
+    font-size: 1.25rem;
+  }
+
+  & > a {
+    border: 2px solid #fff;
+    border-radius: 0.3125rem;
+    padding: 1rem;
+
+    &:hover {
+      background-color: rgba($color: #fff, $alpha: 0.1);
+    }
+  }
+}

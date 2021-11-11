@@ -1,0 +1,29 @@
+<div class="sign__in-container">
+  <div class="sign__in-body">
+    <form class="sign__in-form">
+      <label for="username"><i class="fas fa-user"></i>Enter your email</label>
+      <input
+        class="username"
+        placeholder="email@email.com"
+        type="email"
+        name="email"
+        id="floatingInput"
+        [(ngModel)]="email"
+      />
+      <label for="password"
+        ><i class="fas fa-lock-alt"></i>Enter your password</label
+      >
+      <input
+        class="password"
+        placeholder="password"
+        type="password"
+        name="password"
+        id="floatingPassword"
+        [(ngModel)]="password"
+      />
+      <button class="sign__in-btn" (click)="checkLogin()" type="submit">
+        <i class="fas fa-lock-alt"></i>Sign in
+      </button>
+    </form>
+  </div>
+</div>

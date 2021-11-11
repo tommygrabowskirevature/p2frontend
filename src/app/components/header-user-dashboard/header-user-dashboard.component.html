@@ -1,0 +1,36 @@
+<div class="header-container">
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo-container">
+        <a href="/"
+          ><img
+            class="logo"
+            src="assets/Images/logo.png"
+            alt="coming soon"
+            class="logo"
+        /></a>
+      </div>
+      <ul class="navbar__list">
+        <li class="navbar__list__item">
+          <a
+            *ngIf="_router.url != '/users'"
+            (click)="setDocTitle('Sign In')"
+            routerLink="/signin"
+            class="loginBtn"
+          >
+            <i class="fas fa-lock-alt"></i>Sign in</a
+          >
+
+          <a
+            *ngIf="_router.url === '/users'"
+            (click)="setDocTitle('Lint')"
+            routerLink="/"
+            class="loginBtn"
+          >
+            <i class="fas fa-lock-alt"></i>Sign out</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
